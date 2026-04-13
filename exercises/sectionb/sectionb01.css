@@ -1,4 +1,7 @@
-h1 {color:blueviolet}
+h1 {color:#3439bb; font-family: sans-serif;}
 
-p {color:palevioletred; font-size:large}
-ol {font-size: small; }
+p {color:rgb(114, 41, 65); font-size:large}
+ol {font-size: small; color:#3439bb}
+
+html {background-color:rgb(242, 231, 233); font-family: sans-serif;}
+img {width:250px}
