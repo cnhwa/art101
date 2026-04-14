@@ -1,7 +1,15 @@
-p { color:blue; font-size:larger; }
-p {background-color: cornsilk; background-size:0px }
+p { color:rgb(28, 28, 113); font-size:larger; }
+p {background-color: rgb(232, 226, 198); background-size:0px }
 
-li { text-align:center; color:purple; }
+li { text-align:center; color:rgb(149, 47, 149); }
 
 html { font-family: "Micro 5"; background-color: powderblue;}
 
+span {background-color: rgb(151, 230, 230);}
+img {width: 150px}
+#blue-small {width:50px}
+#blue-large {width:250px}
+
+/* select all html tags that have a class highlight_01 */
+.highlight_01 {background-color: rgb(234, 234, 134);}
+.highlight_02 {background-color: rgb(158, 234, 154);}
