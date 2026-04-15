@@ -1,5 +1,6 @@
 img {
-    width:100px
+    width: 250px;
+    border-radius: 20px;
 }
 
 body {
@@ -12,3 +13,13 @@ h1,h2, h3 {
     font-family: sans-serif;
 }
 
+p, ol {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+p strong {
+    color:#1d1184; 
+}
+
+#p-size-small {font-size: small}
+#p-size-large {font-size: large }
