@@ -1,0 +1,16 @@
+body {
+    background: #e1f3f1;
+    padding: 50px;
+}
+
+p,ol {
+    font-family:sans-serif;
+}
+
+ol {
+    font-size:smaller
+}
+
+img {
+    width: 350px
+}
