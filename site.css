@@ -1,10 +1,7 @@
-img {
-    width: 250px;
-    border-radius: 20px;
-}
+
 
 body {
-    background: #e1f3f1;
+    background: #4e8ec0;
     padding: 50px;
 }
 
@@ -13,12 +10,84 @@ h1,h2, h3 {
     font-family: sans-serif;
 }
 
-p, ol {
+p, ol, ul {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 p strong {
     color:#1d1184; 
+}
+
+a {
+    color:#ab5eed
+}
+
+#introduction {
+    background: #f3f7ff;
+    padding: 20px;
+    border-left: 6px solid #1d1184;
+    flex: 2;
+    border-radius: 12px;
+}
+
+#introduction h2 {
+    font-style: italic;
+    margin-top: 0;
+}
+
+#introduction p {
+    font-size: 120%;
+    line-height: 1.5;
+}
+
+.profile {
+    text-align: center;
+    flex: 1;
+    ;
+}
+
+.profile img {
+    width: 220px;
+    border-radius: 12px;
+}
+
+.profile p {
+    font-size: 90%;
+}
+
+.navigation {
+    background: #fff7e8;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.navigation h2 {
+    margin-top: 0;
+}
+
+.navigation li {
+    margin-bottom: 8px;
+    
+}
+
+.navigation a {
+    
+    font-weight: bold;
+}
+
+.top-section {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    margin: 0 0 25px 0;
+}
+
+#page {
+    max-width: 900px;
+    margin: 0 auto 0 auto;
+    background: #cee7f5;
+    padding: 30px;
+    border-radius: 10px;
 }
 
 #p-size-small {font-size: small}

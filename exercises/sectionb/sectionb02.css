@@ -14,3 +14,12 @@ ol {
 img {
     width: 350px
 }
+
+#f-color-1{color:rgb(203, 31, 31)}
+#f-color-2{color:rgb(206, 150, 46)}
+#f-color-3{color:rgb(84, 117, 206)}
+#f-color-4{color:rgb(159, 53, 201)}
+#f-color-5{color:rgb(224, 114, 133)}
+#f-color-6{color:rgb(35, 173, 35)}
+
+/* for future ref, use class instead of id for this color changing thing ~ that way for ex, you can make it so that anytime "monica" shows up it can be red colored ~ and then you dont have to make a bunch of ids??? */
