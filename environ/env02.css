@@ -1,0 +1,39 @@
+body {
+  background-image: url("background.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+p {
+    text-align: center;
+    font-family: "Reenie Beanie";
+    font-size: 25px
+}
+
+.text-box {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgb(240, 198, 221);
+  width: fit-content;
+  padding:10px;
+  
+  
+}
+
+img{
+    width:300px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.reenie-beanie-regular {
+  font-family: "Reenie Beanie", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+#p-size-big {font-size: 35px}
