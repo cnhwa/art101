@@ -1,3 +1,4 @@
+
 body {
   background-image: url("background.jpg");
   background-position: center center;
@@ -5,35 +6,87 @@ body {
   background-size: cover;
   background-attachment: fixed;
 }
+/* text elements */
+    p {
+        text-align: center;
+        font-family: "Reenie Beanie";
+        font-size: 25px 
+    }
 
-p {
-    text-align: center;
-    font-family: "Reenie Beanie";
-    font-size: 25px
-}
-
-.text-box {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: rgb(240, 198, 221);
-  width: fit-content;
-  padding:10px;
-  
-  
-}
-
-img{
-    width:300px;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.reenie-beanie-regular {
-  font-family: "Reenie Beanie", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
+    .reenie-beanie-regular {
+    font-family: "Reenie Beanie", cursive;
+    font-weight: 400;
+    font-style: normal;
+    }
 
 
-#p-size-big {font-size: 35px}
+    #p-size-big {font-size: 35px}
+
+    .text-box {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(240, 198, 221);
+    width: fit-content;
+    padding:10px;
+    
+    
+    }
+
+/* main img elements */
+    #cat-img{
+        width:300px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #tree-img{
+        display: flex;
+        width: 450px;
+        position: fixed;
+        bottom: 200px;
+        left: 70%;
+        transform: translateX(-50%);
+    }
+
+    #rock-img{
+        display: flex;
+        gap: 10px 20px;
+        width:170px;
+        position: absolute;
+        bottom: 230px;
+        left: 75%;
+        transform: translateX(-50%);
+    }
+
+    #moon-img{
+        display:flex;
+        gap: 10px 20px;
+        width: 200px;
+        
+    }
+
+    #cloud-img{
+        display: flex;
+        gap: 10px 20px;
+        width: 500px;
+        position: absolute;
+        bottom: 530px;
+        left: 75%;
+        transform: translateX(-50%);
+        opacity: 35%
+    }
+
+    #cloud1-img{
+        display: flex;
+        gap: 10px 20px;
+        width: 450px;
+        position: absolute;
+        bottom: 470px;
+        left: 31%;
+        transform: translateX(50%);
+        opacity: 15%;
+        transform: scaleX(-1);
+    }
+
+
