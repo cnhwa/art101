@@ -14,3 +14,9 @@ $("#needy-button").click(function () {
     console.log(count);
 
 });
+
+.click(function () {
+
+    // code goes here
+
+});
