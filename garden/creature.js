@@ -23,7 +23,7 @@ $("#crAdd").click(function(){
         $("#creature-list").append(`
             <div class="creature">
                 <div class="creature-body" style="background-color:${crColor}"> ${crEyesHtml} </div>
-                <div class="creature-info">${crName}</div> 
+                <div class="creature-info"> ${crName}</div> 
             </div>
             
             `);
