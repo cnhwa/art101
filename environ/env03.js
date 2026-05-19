@@ -1,11 +1,11 @@
-let environmentTitle = "The Room That Refuses Morning";
+let environmentTitle = "a shooting star? no! its a cat!";
 
-let environmentElements = ["curtain", "dust", "warm floor", "half-open door"];
+let environmentElements = ["tree", "rock", "grass", "stars", ""];
 
 let mainEntity = {
-    name: "The Curtain",
-    type: "soft border",
-    mood: "suspicious",
+    name: "the cat",
+    type: "animal",
+    mood: "ambitous",
     isMoving: true,
     favoriteElement: environmentElements[1]
 };

@@ -1,39 +1,110 @@
+    // reminder "cmd /" to mass comment/uncomment parts
+    let allCreatures=[];
 
-$("#crAdd").click(function(){
-    // assigning variables with value from input
-    let crName=$("#crName").val();
-    let crColor=$("#crColor").val();
-    let crEyesNum=$("#crEyesNum").val();
-
-    //construct html for eyes
-    let crEyesHtml="";
-    for (let i = 0; i < crEyesNum; i++){
-        crEyesHtml = crEyesHtml + "<div class='eye'>. </div>";
+    // function to grab data from the form
+    function getCreatureFromForm(){
+        const freshCreature={
+            name: $("#crName").val(),
+            color: $("#crColor").val(),
+            eyesNum: $("#crEyesNum").val(),
+        }
+        return freshCreature; 
     }
-    
-    //test in console
-    console.log(crName);
-    console.log(crColor);
-    console.log(crEyesNum);
-    console.log(crEyesHtml);
-    
 
-   if(crName.length > 2){
-       // $("#creature-list").append("<div>"+crName+", "+crColor+", "+crEyesNum+"<div>");
-        $("#creature-list").append(`
+    //function to check everything
+    function isCreatureValid(creature) {
+        if (creature.name === "" ) return false;
+        if (creature.name.length >12) return false;
+        if ( isNaN(creature.eyesNum) || creature.eyesNum >5 ) return false;        
+        return true;
+    }
+
+    //function to add creature to the page
+    function renderCreature(creature){
+        let crEyesHtml = "";
+        for(let i = 0; i < creature.eyesNum; i++){
+            crEyesHtml = crEyesHtml + "<div class='eye'>.<div>";
+
+        }
+
+        const html=`
             <div class="creature">
                 <div class="creature-body" style="background-color:${crColor}"> ${crEyesHtml} </div>
                 <div class="creature-info"> ${crName}</div> 
             </div>
             
-            `);
-   }
-   else {
+            `;
+        return html;
+    }
+
+    //function to append creature to page
+    function addCreatureToDOM(creature){
+        const html = renderCreature(creature);
+        $("#creature-list").append(html);
+    }
+
+    // function clearForm(){
+    //     $("#crName").val("");
+    //     $("#crColor").val("#ee7dea");
+    //     $("#crEyesNum").val(1);
+    // }
+
+    $("#crAdd").click(function(){
+        // create creature object from the form inputs
+        const newCreature = getCreatureFromForm();
+        console.log(newCreature);
+        
+        // safety checks
+        console.log(isCreatureValid(newCreature));
+        if (isCreatureValid(newCreature)==false){
+            return;
+        }
+
+        // add creature to the page
+        addCreatureToDOM(newCreature);
+
+        // save to the memory
+        // reset the form to prepare for the next iteration
+    });
+
+
+
+//$("#crAdd").click(function(){
+
+    // assigning variables with value from input
+        // let crName=$("#crName").val();
+        // let crColor=$("#crColor").val();
+        // let crEyesNum=$("#crEyesNum").val();
+
+    //construct html for eyes
+        // let crEyesHtml="";
+       //  for (let i = 0; i < crEyesNum; i++){
+            // crEyesHtml = crEyesHtml + "<div class='eye'>. </div>";
+        // }
     
-   }
+    //test in console
+       //  console.log(crName);
+        // console.log(crColor);
+        // console.log(crEyesNum);
+        // console.log(crEyesHtml);
+    
+
+   // if(crName.length > 2){
+       // $("#creature-list").append("<div>"+crName+", "+crColor+", "+crEyesNum+"<div>");
+        // $("#creature-list").append(`
+            // <div class="creature">
+                // <div class="creature-body" style="background-color:${crColor}"> ${crEyesHtml} </div>
+                // <div class="creature-info"> ${crName}</div> 
+            // </div>
+            
+           //  `);
+   // }
+   // else {
+    
+   // }
 
    // $("#creature-list").append("<div>"+crName+"<div>");
 
-    $("#crName").val("");
+    // $("#crName").val("");
     
-});
+// });
