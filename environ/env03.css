@@ -1,36 +1,145 @@
-body {
-  background-image: url("background.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
-/* text elements */
+    
+ /* text elements */
+    body {
+        background-image: url("background.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+        margin: 0;
+        gap: 20px;
+
+    }
+
     p {
-        text-align: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: rgb(240, 198, 221);
+        width: fit-content;
+        padding:10px;
         font-family: "Reenie Beanie";
-        font-size: 25px 
+        font-size: 25px; 
+        text-align: center;
     }
 
     .reenie-beanie-regular {
-    font-family: "Reenie Beanie", cursive;
+    font-family: "Reenie Beanie";
     font-weight: 400;
     font-style: normal;
     }
 
 
     #p-size-big {font-size: 35px}
+    .highlight_01 {color: rgb(234, 234, 113);}
 
-    .text-box {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: rgb(240, 198, 221);
-    width: fit-content;
-    padding:10px;
-    
-    
+    .textbox {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+
+        background-color: rgba(31, 66, 113, 0.714);   
+        border: 5px solid rgba(82, 61, 169, 0.6);   
+        border-radius: 16px;
+        padding: 24px 32px;
+        width: 620px;
+        text-align: center;
+        color: rgb(240, 198, 221);                    
+        font-family: "Reenie Beanie";
+        font-size: 20px;
+
     }
 
-/* main img elements */
+    .textbox p {
+        background: none;
+        margin: 0;              
+        line-height: 1.1;       
+        color: rgb(240, 198, 221);
+        font-family: "Reenie Beanie";
+        text-align: center;
+    }
+
+    .bigline {
+        font-size: 45px;
+        margin-top: 15px;
+    }
+
+  
+    #environment-output {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+
+        background-color: rgba(31, 66, 113, 0.714);   
+        border: 5px solid rgba(82, 61, 169, 0.6);   
+        border-radius: 16px;
+        padding: 24px 32px;
+        width: 620px;
+        text-align: center;
+        color: rgb(240, 198, 221);                    
+        font-family: "Reenie Beanie";
+        font-size: 25px;
+    }
+
+    #environment-output p {
+        background: none;
+        color: rgb(240, 198, 221);
+        font-size: 25px;
+        margin-bottom: 18px;
+    }
+
+    #environment-output button {
+        background-color: rgba(60, 35, 110, 0.714);  
+        color: rgb(240, 198, 221);
+        border: 2px solid rgba(82, 61, 169, 0.6); 
+        border-radius: 20px;                          
+        padding: 6px 14px;
+        font-family: "Reenie Beanie";
+        font-size: 20px;
+        cursor: pointer;
+        margin: 4px;
+    }
+
+    #environment-output button.selected {
+        color: rgb(234, 234, 113);  
+    }
+
+    #environment-output #message{
+        color: rgb(234, 234, 113);
+    }
+
+    #message {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        color: rgb(234, 234, 113);
+        font-size: 25px;
+        
+        margin-top: 12px;
+        min-height: 24px;
+    }
+
+    #msg-box {
+        background-color: rgba(83, 61, 169, 0.31);    
+        border: 1.5px solid rgba(82, 61, 169, 0.6); 
+        border-radius: 16px;
+        padding: 5px 10px;
+        width: 500px;
+        min-height: 50px;
+        margin-top: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+
+/* img elements */
     #cat-img{
         width:300px;
         position: absolute;
@@ -40,11 +149,11 @@ body {
     }
 
     #tree-img{
-        display: flex;
+        
         width: 450px;
         position: fixed;
-        bottom: 200px;
-        left: 70%;
+        bottom: 100px;
+        left: 85%;
         transform: translateX(-50%);
     }
 
@@ -62,7 +171,10 @@ body {
         display:flex;
         gap: 10px 20px;
         width: 200px;
-        
+        position: fixed;
+        bottom: 550px;
+        right: 75%;
+        transform: translateX(-50%);
     }
 
     #cloud-img{
