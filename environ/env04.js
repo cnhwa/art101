@@ -33,7 +33,7 @@ $("#button-row button").click(function () {
 $("#moon-img").click(function () {
     let timeOfDay = prompt("What time of day is it? (sunrise, night)").toLowerCase();
 
-    if (timeOfDay === "sunrise") {
+    if (timeOfDay == "sunrise") {
         $("body").css("background-image", "url('sunsrise.png')");
     } 
     else {
@@ -41,13 +41,20 @@ $("#moon-img").click(function () {
     }
 })
 
-// $("#tree-img").click(function () {
-//     let timeOfDay = prompt("What time of day is it? (sunrise, night)").toLowerCase();
+$("#tree-img").click(function () {
+    let seasonOfTree = prompt("What season is it for the tree? (fall/winter/spring/summer)").toLowerCase();
 
-//     if (timeOfDay === "sunrise") {
-//         $("#tree-img").css("background-image", "url('sunsrise.png')");
-//     } 
-//     else {
-//         $("tree-img").css("background-image", "url('background.jpg')");
-//     }
-// })
+    if (seasonOfTree == "fall") {
+    $("#tree-img").attr("src", "tree-seasons/falltree.png");
+    } 
+    if (seasonOfTree == "winter") {
+        $("#tree-img").attr("src", "tree-seasons/wintertree.png");
+    } 
+    if (seasonOfTree == "spring") {
+        $("#tree-img").attr("src", "treee.png");
+    } 
+    if (seasonOfTree == "summer") {
+        $("#tree-img").attr("src", "tree-seasons/summertree.png");
+    }
+
+})
