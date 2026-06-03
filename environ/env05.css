@@ -150,16 +150,16 @@
         }
 
     @keyframes jump {
-    0% { transform: translateX(-50%) translateY(0); }
-    12% { transform: translateX(-51%) translateY(-25px) rotate(5deg); }
-    25% { transform: translateX(-52%) translateY(-50px) rotate(10deg); }
-    37% { transform: translateX(-53%) translateY(-100px) rotate(15deg); }
-    50% { transform: translateX(-54%) translateY(-150px) rotate(0deg); }
-    62% { transform: translateX(-53%) translateY(-100px) rotate(-15deg); }
-    75% { transform: translateX(-52%) translateY(-50px) rotate(-10deg); }
-    87% { transform: translateX(-51%) translateY(-25px) rotate(-5deg); }
-    100% { transform: translateX(-50%) translateY(0); }
-    }
+        0% { transform: translateX(-50%) translateY(0); }
+        12% { transform: translateX(-51%) translateY(-25px) rotate(5deg); }
+        25% { transform: translateX(-52%) translateY(-50px) rotate(10deg); }
+        37% { transform: translateX(-53%) translateY(-100px) rotate(15deg); }
+        50% { transform: translateX(-54%) translateY(-150px) rotate(0deg); }
+        62% { transform: translateX(-53%) translateY(-100px) rotate(-15deg); }
+        75% { transform: translateX(-52%) translateY(-50px) rotate(-10deg); }
+        87% { transform: translateX(-51%) translateY(-25px) rotate(-5deg); }
+        100% { transform: translateX(-50%) translateY(0); }
+        }
 
     #thought {
         display: none;

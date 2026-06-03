@@ -59,7 +59,6 @@ $("#tree-img").click(function () {
 
 })
 
-
 $("#cat-img").on("click", function() {
   $(this).addClass("jumping");
   
