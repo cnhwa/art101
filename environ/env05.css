@@ -18,6 +18,7 @@
 
     p {
         background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 16px;
         color: rgb(240, 198, 221);
         width: fit-content;
         padding:10px;
@@ -44,7 +45,7 @@
         background-color: rgba(31, 66, 113, 0.714);   
         border: 5px solid rgba(82, 61, 169, 0.6);   
         border-radius: 16px;
-        padding: 24px 32px;
+        padding: 20px 30px;
         width: 620px;
         text-align: center;
         color: rgb(240, 198, 221);                    
@@ -135,6 +136,52 @@
         justify-content: center;
     }
 
+    #cat-img {
+        width: 300px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        cursor: pointer;
+        }
+
+    #cat-img.jumping {
+        animation: jump 0.85s ease-in-out;
+        }
+
+    @keyframes jump {
+    0% { transform: translateX(-50%) translateY(0); }
+    12% { transform: translateX(-51%) translateY(-25px) rotate(5deg); }
+    25% { transform: translateX(-52%) translateY(-50px) rotate(10deg); }
+    37% { transform: translateX(-53%) translateY(-100px) rotate(15deg); }
+    50% { transform: translateX(-54%) translateY(-150px) rotate(0deg); }
+    62% { transform: translateX(-53%) translateY(-100px) rotate(-15deg); }
+    75% { transform: translateX(-52%) translateY(-50px) rotate(-10deg); }
+    87% { transform: translateX(-51%) translateY(-25px) rotate(-5deg); }
+    100% { transform: translateX(-50%) translateY(0); }
+    }
+
+    #thought {
+        display: none;
+        position: absolute;
+        left: 500px;
+        top: 700px;
+        color: rgb(240, 198, 221);
+        background-color: rgba(83, 61, 169, 0.529);    
+        border: 1.5px solid rgba(82, 61, 169, 0.6); 
+        border-radius: 16px;
+        padding: 12px;
+        width: 180px;
+        z-index: 3;
+        pointer-events: none;
+        font-family: "Reenie Beanie";
+        font-size: 20px;
+        }
+
+    #status {
+        font-size: 20px;
+        font-weight: bold;
+        }
 
 
 
@@ -145,6 +192,7 @@
         bottom: 0;
         left: 50%;
         transform: translateX(-50%);
+        cursor: pointer;
     }
 
     #tree-img{

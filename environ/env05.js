@@ -58,3 +58,23 @@ $("#tree-img").click(function () {
     }
 
 })
+
+
+$("#cat-img").on("click", function() {
+  $(this).addClass("jumping");
+  
+  $(this).one("animationend", function() {
+    $(this).removeClass("jumping");
+  });
+});
+
+$("#cat-img").hover(
+  function () {
+    $("#thought").stop(true, true).slideDown(300);
+    $("#status").text("You're looking at the cat's thoughts!");
+  },
+  function () {
+    $("#thought").stop(true, true).slideUp(300);
+    $("#status").text("the paper cat is taking a break..");
+  }
+);
