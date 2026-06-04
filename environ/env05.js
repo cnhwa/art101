@@ -37,7 +37,7 @@ $("#tree-img").click(function () {
     let seasonOfTree = prompt("What season is it for the tree? (fall/winter/spring/summer)").toLowerCase();
 
     if (seasonOfTree == "fall") {
-    $("#tree-img").attr("src", "tree-seasons/falltree.png");
+        $("#tree-img").attr("src", "tree-seasons/falltree.png");
     } 
     if (seasonOfTree == "winter") {
         $("#tree-img").attr("src", "tree-seasons/wintertree.png");
