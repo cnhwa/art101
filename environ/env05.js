@@ -39,16 +39,18 @@ $("#tree-img").click(function () {
     if (seasonOfTree == "fall") {
         $("#tree-img").attr("src", "tree-seasons/falltree.png");
     } 
-    if (seasonOfTree == "winter") {
+    else if (seasonOfTree == "winter") {
         $("#tree-img").attr("src", "tree-seasons/wintertree.png");
     } 
-    if (seasonOfTree == "spring") {
+    else if (seasonOfTree == "spring") {
         $("#tree-img").attr("src", "treee.png");
     } 
-    if (seasonOfTree == "summer") {
+    else if (seasonOfTree == "summer") {
         $("#tree-img").attr("src", "tree-seasons/summertree.png");
     }
-
+    else {
+        alert("oops! ry typing in: fall, winter, spring, or summer");
+    }
 })
 
 // CAT JUMPING CLICK FUNCTION

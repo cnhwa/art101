@@ -1,15 +1,16 @@
-let environmentTitle = "a shooting star? no! its a cat! a paper cat!";
+// let environmentTitle = "a shooting star? no! its a cat! a paper cat!";
 
-let environmentElements = ["tree", "rock", "grass", "stars", "clouds", "moon"];
+// let environmentElements = ["tree", "rock", "grass", "stars", "clouds", "moon"];
 
-let mainEntity = {
-    name: "the cat",
-    type: "animal",
-    mood: "ambitous",
-    isMoving: true,
-    favoriteElement: environmentElements[3]
-};
+// let mainEntity = {
+//     name: "the cat",
+//     type: "animal",
+//     mood: "ambitous",
+//     isMoving: true,
+//     favoriteElement: environmentElements[3]
+// };
 
+//ENV INFO MESSAGES 
 let messages = {
     title: "info: a shooting star? no! its a cat! a paper cat!",
     "main-entity": "info: a cat that loves to practice its jumping every night, and is made of paper",
@@ -20,6 +21,7 @@ let messages = {
     stars: "info: bright shiny objects the paper cat loves to watch"
 };
 
+// ENV INFO BUTTONS CLICK FUNCTION
 $("#button-row button").click(function () {
     let id = $(this).attr("id");
     let message = messages[id];
@@ -30,6 +32,7 @@ $("#button-row button").click(function () {
     $(this).addClass("selected");
 });
 
+// MOON TIME OF DAY CLICK FUNCTION
 $("#moon-img").click(function () {
     let timeOfDay = prompt("What time of day is it? (sunrise, night)").toLowerCase();
 
@@ -41,6 +44,7 @@ $("#moon-img").click(function () {
     }
 })
 
+// TREE SEASONS PROMPT FUNCTION
 $("#tree-img").click(function () {
     let seasonOfTree = prompt("What season is it for the tree? (fall/winter/spring/summer)").toLowerCase();
 
