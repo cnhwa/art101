@@ -1,4 +1,4 @@
-/* text elements */
+/* TEXTBOX/ TEXT ELEMENTS  */
     body {
         background-image: url("background.jpg");
         background-position: center center;
@@ -28,10 +28,10 @@
     }
 
     .reenie-beanie-regular {
-    font-family: "Reenie Beanie";
-    font-weight: 400;
-    font-style: normal;
-    }
+        font-family: "Reenie Beanie";
+        font-weight: 400;
+        font-style: normal;
+        }
 
 
     #p-size-big {font-size: 35px}
@@ -136,6 +136,8 @@
         justify-content: center;
     }
 
+
+/* CAT JUMPING ELEMENTS + ANIMATION */
     #cat-img {
         width: 300px;
         position: absolute;
@@ -161,6 +163,8 @@
         100% { transform: translateX(-50%) translateY(0); }
         }
 
+
+/* CAT'S THOUGHTS ELEMENTS */
     #thought {
         display: none;
         position: absolute;
@@ -184,8 +188,7 @@
         }
 
 
-
-/* img elements */
+/* ENV IMAGE ELEMENTS (SIZE, POSITIONING) */
     #cat-img{
         width:300px;
         position: absolute;
